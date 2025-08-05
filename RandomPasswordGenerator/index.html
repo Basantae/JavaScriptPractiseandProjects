@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>
+      Generate a <br /><span>Random Password</span>
+    </h1>
+
+    <div class="display">
+      <!-- Display generated password here -->
+      <input type="text" id="password" placeholder="Password" readonly />
+      <!-- Copy icon triggers password copy -->
+      <img src="copy.png" alt="Copy" onclick="copyPassword()" />
+    </div>
+
+    <!-- Button triggers animation and password generation -->
+    <button onclick="animateAndCreatePassword()">
+      <img src="generate.png" alt="Generate" />
+      Generate Password
+    </button>
+
+    <!-- Loading animation line below button -->
+    <div
+      id="loading-line"
+      style="
+        height: 4px;
+        width: 0;
+        background: #00ffd1;
+        border-radius: 4px;
+        margin-top: 10px;
+        transition: width 0.5s ease;
+      "
+    ></div>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        #color-name {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 30px;
+            padding: 8px 16px;
+            background: #f7fafc;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .color-display {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            border: 5px solid #e2e8f0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+           
+        }
+
+        .color-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 4px solid #e2e8f0;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            justify-self: center;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            border-color: #cbd5e0;
+        }
+
+        #blue {
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+        }
+
+        #red {
+            background: linear-gradient(135deg, #f56565, #e53e3e);
+        }
+
+        #green {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+        }
+
+        #purple {
+            background: linear-gradient(135deg, #9f7aea, #805ad5);
+        }
+
+        #orange {
+            background: linear-gradient(135deg, #ed8936, #dd6b20);
+        }
+
+        #yellow {
+            background: linear-gradient(135deg, #ecc94b, #d69e2e);
+        }
+
+        #pink {
+            background: linear-gradient(135deg, #ed64a6, #d53f8c);
+        }
+
+        #cyan {
+            background: linear-gradient(135deg, #4fd1c7, #38b2ac);
+        }
+
+        #lime {
+            background: linear-gradient(135deg, #68d391, #48bb78);
+        }
+
+        #indigo {
+            background: linear-gradient(135deg, #667eea, #5a67d8);
+        }
+
+        #brown {
+            background: linear-gradient(135deg, #a0522d, #8b4513);
+        }
+
+        #gray {
+            background: linear-gradient(135deg, #718096, #4a5568);
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #4a5568;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .color-display {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .button {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .color-options {
+                gap: 12px;
+                grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+        }

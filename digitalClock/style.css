@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Obirton", sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background: linear-gradient(135deg, #1a1a1a, #333);
+
+}
+
+.center {
+  text-align: center;
+}
+
+#banner {
+  margin-bottom: 40px;
+}
+
+#banner span {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+
+#clock {
+  font-size: 72px;
+  font-weight: bold;
+  color: #00ff88;
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+  background: #222;
+  padding: 30px 50px;
+  border-radius: 15px;
+  border: 3px solid #444;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  animation: clockFlip 1s ease-in-out;
+}
+
+
+
+
